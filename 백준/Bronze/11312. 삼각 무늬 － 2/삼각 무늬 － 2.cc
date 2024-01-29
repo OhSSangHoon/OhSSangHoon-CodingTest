@@ -13,7 +13,10 @@ int main(){
     for(int i = 0; i < n; i++){
         cin >> a >> b;
 
-        triangle = a / b * a / b;
+        a = a * a;
+        b = b * b;
+
+        triangle = a / b;
 
         cout << triangle << endl;
     }
