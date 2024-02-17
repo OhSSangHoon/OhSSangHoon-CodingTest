@@ -2,9 +2,6 @@
 
 using namespace std;
 
-//현재 시간복잡도는 O(m * (s - f + 1))
-//O(n)으로 만들어야함
-
 int main(){
     ios_base::sync_with_stdio(false);
     //입출력 묶음
@@ -29,6 +26,7 @@ int main(){
         prefixsum[i] = prefixsum[i - 1] + arr[i - 1];
     }
 
+    //sum에 값 저장
     for(int i = 0; i < m; i++){
         int sum =0;
 
