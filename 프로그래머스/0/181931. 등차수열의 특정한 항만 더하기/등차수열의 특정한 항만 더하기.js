@@ -6,12 +6,10 @@ function solution(a, d, included) {
     // included[i]가 true일 때만 계산
     
     for(let i = 0; i < included.length; i++){
-        const sum = a + (d * i);
-        
         // included가 true이면
         if(included[i]){
             // 합
-            answer += sum;
+            answer += a+(d * i);
         }
     }
     
